@@ -1,0 +1,83 @@
+html,body { width: 100%;height: 100%;color: #fff; }
+a { text-decoration: none; }
+
+.container { width: 100%;height: 100%;z-index: -1; }
+.head { width: 100%;padding: 10px 0;overflow: hidden;position: fixed; }
+.head-left { width: 40%;float: left;margin-left: 10px; }
+.head-right { color: #01b3de;border: 1px solid #01b3de;float: right;margin: 0;border-radius: 15px;padding: 0 10px;line-height: 160%;margin-right: 10px; }
+
+
+.page { width: 100%;position: fixed;text-align: center;bottom: 50px; }
+.page img { width: 7%; }
+
+
+.mod-main { width: 100%;height: 100%;text-align: center; }
+.mod-con { width: 100%; }
+.logo { width: 66.6%; }
+.mod-text { color: #fff;width: 100%;font-size: 20px;margin: 60px 0; }
+.mod-text-min { font-size: 14px;color: #fff;text-align: left;display: inline-block; }
+.alicloud { width: 21%; }
+.intel { width: 9.8%;margin-left: 20px; }
+.mod-footer { width: 100%;position: absolute;bottom: 3px;color: #fff;text-align: center; }
+
+
+.page-home { background: url("../img/page-home/bg.jpg");background-size: cover; }
+
+
+.page-1 { background: url("../img/one-bg.jpg");background-size: cover; }
+.one { width: 8.4%; }
+
+
+.agenda { background: url("../img/agenda-bg.jpg");background-size: cover; }
+.agenda-title { font-size: 28px;color: #fcd400; }
+.agenda-con ul { padding-left: 46px; }
+.agenda-con ul li { text-align: left;font-size: 13px; }
+.agenda-con ul li p { line-height: 30px;margin: 0; }
+.speaker { padding-left: 92px; }
+
+
+.partner { background: url("../img/partner-bg.jpg");background-size: cover; }
+.partner-title p { font-size: 28px;color: #000;margin: 0; }
+.underline { font-size: 0;margin-top: 6px; }
+.underline img { width: 25.8%; }
+.intel-big { margin: 30px 0 60px; }
+.intel-big img { width: 22.3%; }
+.underline-small img { width: 13.1%; }
+.gratitude { margin-top: 40px; }
+.gratitude img { width: 43.75%; }
+.addr-con { margin: 90px 0;line-height: 30px; }
+
+
+.addr { background: url("../img/addr-bg.jpg");background-size: cover; }
+.addr-title { font-size: 28px;color: #fcd400; }
+
+
+.none { display: none; }
+
+
+.mod-middle {
+  display:-webkit-box;
+  -webkit-box-orient:horizontal;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+  
+  display:-moz-box;
+  -moz-box-orient:horizontal;
+  -moz-box-pack:center;
+  -moz-box-align:center;
+  
+  display:-o-box;
+  -o-box-orient:horizontal;
+  -o-box-pack:center;
+  -o-box-align:center;
+  
+  display:-ms-box;
+  -ms-box-orient:horizontal;
+  -ms-box-pack:center;
+  -ms-box-align:center;
+  
+  display:box;
+  box-orient:horizontal;
+  box-pack:center;
+  box-align:center;
+}
