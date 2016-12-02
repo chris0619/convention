@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="page animated infinite pulse">
+<div class="page" id="page">
 	<img src="img/page-home/page.png">
 </div>
 
@@ -30,14 +30,14 @@
 	<div class="section">
 		<div class="mod-main mod-middle page-home">
 			<div class="mod-con">
-				<div class="mod-title animated fadeInUp">
+				<div class="mod-title animated fadeInLeft">
 					<img class="logo" src="img/page-home/logo.png">
 				</div>
-				<div class="mod-text animated fadeInUp">
+				<div class="mod-text animated fadeInRight">
 					<p>云栖大会·广东峰会</p>
 					<p>2016 12.14-12.15 中国-惠州</p>
 				</div>
-				<div class="mod-logo animated fadeInUp">
+				<div class="mod-logo animated fadeInLeft">
 					<img class="alicloud" src="img/page-home/alicloud.png">
 					<img class="intel" src="img/page-home/intel.png">
 				</div>
@@ -65,7 +65,7 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第一页end -->
+	</div> <!-- 第二页end -->
 
 
 	<div class="section">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第二页end -->
+	</div> <!-- 第三页end -->
 
 
 	<div class="section">
@@ -103,7 +103,7 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第三页end -->
+	</div> <!-- 第四页end -->
 
 
 	<div class="section">
@@ -143,44 +143,44 @@
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第四页end -->
+	</div> <!-- 第五页end -->
 
 
 	<div class="section">
 		<div class="partner mod-main mod-middle">
 			<div class="mod-con">
-				<div class="partner-title index6 none"><p>战略合作伙伴</p></div>
-				<div class="underline index6 none"><img src="img/underline.png"></div>
-				<div class="intel-big index6 none"><img src="img/intel-big.png"></div>
-				<div class="partner-title index6 none"><p>特别鸣谢</p></div>
-				<div class="underline underline-small index6 none"><img src="img/underline-small.png"></div>
-				<div class="gratitude index6 none">
-					<img src="img/hoperun.png">
-					<img src="img/deloitte.png">
-					<img src="img/yonyou.png">
-					<img src="img/zhuyunkeji.png">
+				<div class="partner-title index6-title none"><p>战略合作伙伴</p></div>
+				<div class="underline index6-title none"><img src="img/underline.png"></div>
+				<div class="intel-big index6-intel none"><img src="img/intel-big.png"></div>
+				<div class="partner-title index6-gratitude none"><p>特别鸣谢</p></div>
+				<div class="underline underline-small index6-gratitude none"><img src="img/underline-small.png"></div>
+				<div class="gratitude">
+					<img src="img/hoperun.png" class="index6-h none">
+					<img src="img/deloitte.png" class="index6-d none">
+					<img src="img/yonyou.png" class="index6-y none">
+					<img src="img/zhuyunkeji.png" class="index6-z none">
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第五页end -->
+	</div> <!-- 第六页end -->
 
 
 	<div class="section">
 		<div class="addr mod-main mod-middle">
 			<div class="mod-con">
-				<div class="addr-title index7 none"><p>会议地址</p></div>
-				<div class="addr-con index7 none">
-					<p>2016云栖大会·广东峰会</p>
-					<p>广东惠州富力方丽酒店</p>
-					<p>广东 惠州 惠城区 江北东江二路2号</p>
+				<div class="addr-title index7-title none"><p>会议地址</p></div>
+				<div class="addr-con">
+					<p class="index7-p none">2016云栖大会·广东峰会</p>
+					<p class="index7-p none">广东惠州富力方丽酒店</p>
+					<p class="index7-p none">广东 惠州 惠城区 江北东江二路2号</p>
 				</div>
-				<div class="mod-logo index7 none">
-					<img class="alicloud" src="img/page-home/alicloud.png">
-					<img class="intel" src="img/page-home/intel.png">
+				<div class="mod-logo">
+					<img class="alicloud index7-ali none" src="img/page-home/alicloud.png">
+					<img class="intel index7-intel none" src="img/page-home/intel.png">
 				</div>
 			</div>
 		</div>
-	</div> <!-- 第六页end -->
+	</div> <!-- 第七页end -->
 
 
 </div>
@@ -207,17 +207,38 @@ $(function(){
 			}
 			if(index == 5){
 				$(".index5").removeClass("none")
-				$(".index5").addClass("animated fadeInUp")
+				$(".index5").addClass("animated zoomIn")
 			}
 			if(index == 6){
-				$(".index6").removeClass("none")
-				$(".index6").addClass("animated fadeInUp")
+				$(".index6-title").removeClass("none")
+				$(".index6-title").addClass("animated slideInLeft")
+				$(".index6-intel").removeClass("none")
+				$(".index6-intel").addClass("animated rotateIn")
+				$(".index6-gratitude").removeClass("none")
+				$(".index6-gratitude").addClass("animated slideInRight")
+				$(".index6-h").removeClass("none")
+				$(".index6-h").addClass("animated rotateInDownRight")
+				$(".index6-d").removeClass("none")
+				$(".index6-d").addClass("animated rotateInDownLeft")
+				$(".index6-y").removeClass("none")
+				$(".index6-y").addClass("animated rotateInUpRight")
+				$(".index6-z").removeClass("none")
+				$(".index6-z").addClass("animated rotateInUpLeft")
 			}
 			if(index == 7){
-				$(".index7").removeClass("none")
-				$(".index7").addClass("animated fadeInUp")
+				$(".page").addClass("none")
+				$(".index7-title").removeClass("none")
+				$(".index7-title").addClass("animated flipInY")
+				$(".index7-p").removeClass("none")
+				$(".index7-p").addClass("animated rubberBand")
+				$(".index7-ali").removeClass("none")
+				$(".index7-ali").addClass("animated fadeInLeft")
+				$(".index7-intel").removeClass("none")
+				$(".index7-intel").addClass("animated fadeInRight")
 			}
 		}
+
+		
 	});
 });
 </script>
