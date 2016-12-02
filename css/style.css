@@ -18,7 +18,7 @@ a { text-decoration: none; }
 .mod-text-min { font-size: 14px;color: #fff;text-align: left;display: inline-block; }
 .alicloud { width: 21%; }
 .intel { width: 9.8%;margin-left: 20px; }
-.mod-footer { width: 100%;position: absolute;bottom: 3px;color: #fff;text-align: center; }
+.mod-footer { width: 100%;position: absolute;bottom: 0;color: #fff;text-align: center;font-size: 14px; }
 
 
 .page-home { background: url("../img/page-home/bg.jpg");background-size: cover; }
@@ -32,7 +32,7 @@ a { text-decoration: none; }
 .agenda-title { font-size: 28px;color: #fcd400; }
 .agenda-con ul { padding-left: 46px; }
 .agenda-con ul li { text-align: left;font-size: 13px; }
-.agenda-con ul li p { line-height: 30px;margin: 0; }
+.agenda-con ul li p { line-height: 24px;margin: 0; }
 .speaker { padding-left: 92px; }
 
 
@@ -45,7 +45,7 @@ a { text-decoration: none; }
 .underline-small img { width: 13.1%; }
 .gratitude { margin-top: 40px; }
 .gratitude img { width: 43.75%; }
-.addr-con { margin: 90px 0;line-height: 30px; }
+.addr-con { margin: 70px 0;line-height: 30px; }
 
 
 .addr { background: url("../img/addr-bg.jpg");background-size: cover; }
