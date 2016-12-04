@@ -45,8 +45,8 @@ a { text-decoration: none; }
 
 .agenda { background: url("../img/agenda-bg.jpg");background-size: cover; }
 .agenda_title { font-size: 28px;color: #fcd400; }
-.agenda_con ul { padding-left: 46px; }
-.agenda_con ul li { text-align: left;font-size: 13px; }
+.agenda_con ul li { text-align: left;font-size: 13px;width: 77%;
+    margin: auto; }
 .agenda_con ul li p { line-height: 24px;margin: 0; }
 .speaker { padding-left: 92px; }
 
