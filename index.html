@@ -292,6 +292,35 @@ function animationOver(elem, callback, flag) {
         	intel.removeClass("animated flipInY");
         }, true);
 
+        intelAnimation(intel);
+        alicloudAnimation(alicloud);
+
+        var alicloudTimer;
+        function alicloudAnimation(elem) {
+            if ( !elem ) { return false };
+            clearTimeout(alicloudTimer);
+            alicloudTimer = setTimeout(function() {
+            elem.addClass("animated rubberBand");
+            animationOver(elem[0], function() {
+            elem.removeClass("animated rubberBand");
+            }, true);
+            alicloudAnimation(elem);
+            }, 3000);
+        }
+
+        var intelTimer;
+        function intelAnimation(elem) {
+            if ( !elem ) { return false };
+            clearTimeout(intelTimer);
+            intelTimer = setTimeout(function() {
+            elem.addClass("animated rubberBand");
+            animationOver(elem[0], function() {
+            elem.removeClass("animated rubberBand");
+            }, true);
+            intelAnimation(elem);
+            }, 3000);
+        }
+
     }
 
 /* second animation */
@@ -520,6 +549,22 @@ function animationOver(elem, callback, flag) {
     }
 
 
+// 定时循环橡皮筋动画
+/*var loopRubberBandTimer;
+function loopRubberBandAnimation(elem) {
+    if ( !elem ) { return false };
+    clearTimeout(loopRubberBandTimer);
+    loopRubberBandTimer = setTimeout(function() {
+        elem.addClass("animated rubberBand");
+        animationOver(elem[0], function() {
+            elem.removeClass("animated rubberBand");
+        }, true);
+        loopRubberBandAnimation(elem);
+    }, 3000);
+};*/
+
+
+
     if ( document.getElementById("container") ) {
         $('#container').fullpage({
             // navigation: true,
@@ -557,7 +602,7 @@ function wx(){
 
         $('body').prepend('<div style=" overflow:hidden; width:0px; height:0; margin:0 auto; position:absolute; top:-800px;"><img src="'+ weixinShareLogo +'"></div>')
 
-};
+    };
 }
 
 wx();
