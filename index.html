@@ -614,6 +614,13 @@ function loopRubberBandAnimation(elem) {
                     $(".page-arrow").removeClass('reverse-page');
                 };
 
+                //
+                if ( nextIndex == 6 ) {
+                    $(".page-arrow").addClass('gray-page');
+                } else {
+                    $(".page-arrow").removeClass('gray-page');
+                };
+
                 
             },
             'afterLoad': function(anchorLink, index) {// 切换后执行动画处理
