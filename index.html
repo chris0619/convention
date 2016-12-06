@@ -22,7 +22,7 @@
 
 
 <div class="page" id="page">
-	<img src="img/page.png">
+	<div class="page-arrow"></div>
 </div>
 
 
@@ -608,6 +608,12 @@ function loopRubberBandAnimation(elem) {
                 }
                 
                 // 最后一页时箭头向上
+                if ( nextIndex == $(".section").length ) {
+                    $(".page-arrow").addClass('reverse-page');
+                } else {
+                    $(".page-arrow").removeClass('reverse-page');
+                };
+
                 
             },
             'afterLoad': function(anchorLink, index) {// 切换后执行动画处理
