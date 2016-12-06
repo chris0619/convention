@@ -47,7 +47,7 @@ a { text-decoration: none; }
 .speaker { padding-left: 92px; }
 
 
-.partner { background: url("../img/partner-bg.jpg");background-size: cover; }
+.partner { background: url("../img/partner-bg.jpg?1");background-size: cover; }
 .partner-title p { font-size: 28px;color: #000;margin: 0; }
 .underline { font-size: 0;margin-top: 6px; }
 .underline img { width: 25.8%; }
