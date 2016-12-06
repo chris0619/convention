@@ -4,22 +4,14 @@ a { text-decoration: none; }
 
 .container { width: 100%;height: 100%; }
 .head { width: 100%;padding: 10px 0;overflow: hidden;position: fixed;z-index: 1; }
+.head-bg { background: #4c4c4c; }
 .head-left { width: 40%;float: left;margin-left: 10px; }
 .head-right { color: #01b3de;border: 1px solid #01b3de;float: right;margin: 0;border-radius: 15px;padding: 0 10px;line-height: 160%;margin-right: 10px; }
 
 
 .page { width: 100%;position: fixed;text-align: center;bottom: 46px;-webkit-animation: updown 1s;-webkit-animation-iteration-count: infinite;-webkit-animation-direction: alternate;animation: updown 1s;animation-iteration-count: infinite;animation-direction: alternate;z-index: 1; }
-.page img { width: 7%;/*animation: breath 1s;animation-iteration-count: infinite;animation-direction: alternate;*/ }
-/*@keyframes updown {
-  0% { bottom: 40px; }
-  
-  100% { bottom: 30px; }
-}
-@keyframes breath {
-  0% { width: 7%;margin-top: 0; }
-  
-  100% { width: 10%;margin-top: 10px; }
-}*/
+.page img { width: 7%; }
+
 @-webkit-keyframes updown {
   from { -webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);opacity: 0; }
   to { -webkit-transform: translate3d(0,12px,0);transform: translate3d(0,12px,0);opacity: 1; }

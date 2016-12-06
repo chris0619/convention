@@ -249,6 +249,9 @@ function animationOver(elem, callback, flag) {
 
 /* home animation */
     function home_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.css("visibility","hidden");
 
@@ -265,6 +268,7 @@ function animationOver(elem, callback, flag) {
     	intel.css("visibility","hidden");
     }
     function home_ready(elem){
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(mod_title[0], function() {
@@ -327,6 +331,9 @@ function animationOver(elem, callback, flag) {
 
 /* second animation */
     function second_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.css("visibility","hidden");
 
@@ -337,6 +344,7 @@ function animationOver(elem, callback, flag) {
     	mod_text_min.css("visibility","hidden");
     }
     function second_ready(elem){
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(mod_title[0], function() {
@@ -359,6 +367,9 @@ function animationOver(elem, callback, flag) {
 
 /* third animation */
     function third_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.css("visibility","hidden");
 
@@ -369,6 +380,7 @@ function animationOver(elem, callback, flag) {
     	mod_text_min.css("visibility","hidden");
     }
     function third_ready(elem){
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(mod_title[0], function() {
@@ -391,6 +403,9 @@ function animationOver(elem, callback, flag) {
 
 /* forth animation */
     function forth_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.css("visibility","hidden");
 
@@ -401,6 +416,7 @@ function animationOver(elem, callback, flag) {
     	mod_text_min.css("visibility","hidden");
     }
     function forth_ready(elem){
+
     	var mod_title = $(elem).find(".mod_title");
     	mod_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(mod_title[0], function() {
@@ -423,6 +439,9 @@ function animationOver(elem, callback, flag) {
 
 /* fifth animation */
     function fifth_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var agenda_title = $(elem).find(".agenda_title");
     	agenda_title.css("visibility","hidden");
 
@@ -430,6 +449,7 @@ function animationOver(elem, callback, flag) {
     	agenda_con.css("visibility","hidden");
     }
     function fifth_ready(elem){
+
     	var agenda_title = $(elem).find(".agenda_title");
     	agenda_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(agenda_title[0], function() {
@@ -465,8 +485,12 @@ function animationOver(elem, callback, flag) {
 
     	var sixth_z = $(elem).find(".sixth_z");
     	sixth_z.css("visibility","hidden");
+
     }
     function sixth_ready(elem){
+
+    	$(".head").addClass("head-bg");
+
     	var sixth_title = $(elem).find(".sixth_title");
     	sixth_title.addClass("animated slideInLeft").css("visibility", "visible");
     		animationOver(sixth_title[0], function() {
@@ -512,6 +536,9 @@ function animationOver(elem, callback, flag) {
 
 /* seventh animation */
     function seventh_before(elem){
+
+    	$(".head").removeClass("head-bg");
+
     	var addr_title = $(elem).find(".addr_title");
     	addr_title.css("visibility","hidden");
 
@@ -525,6 +552,7 @@ function animationOver(elem, callback, flag) {
     	intel.css("visibility","hidden");
     }
     function seventh_ready(elem){
+
     	var addr_title = $(elem).find(".addr_title");
     	addr_title.addClass("animated flipInY").css("visibility", "visible");
     		animationOver(addr_title[0], function() {
